@@ -2,17 +2,16 @@
 name = "crud"
 version = "0.1.0"
 description = ""
-authors = ["fernando"]
+authors = ["Fernando Miguel <fer_lop10@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-sqlalchemy = "^2.0.32"
-pydantic = {extras = ["email"], version = "^2.8.2"}
-fastapi = "^0.112.2"
-uvicorn = "^0.30.6"
-psycopg2 = "^2.9.9"
-psycopg2-binary = "^2.9.9"
+sqlalchemy = "^2.0.34"
+fastapi = "^0.114.0"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+pydantic = {extras = ["email"], version = "^2.9.0"}
+streamlit = "^1.38.0"
 
 
 [build-system]
