@@ -2,9 +2,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-POSTGRES_DATABASE_URL = "posrtgresql://user:password@postgres/mydatabase"
+SQLITE_DATABASE_URL = "sqlite:///banco_crud.db"
 
-engine = create_engine(POSTGRES_DATABASE_URL)
+engine = create_engine(SQLITE_DATABASE_URL)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
